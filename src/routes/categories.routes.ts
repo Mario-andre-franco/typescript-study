@@ -1,6 +1,6 @@
 import { Router, request } from 'express'
 import { createCategoryController } from '../modules/cars/useCases/createCategory'
-import { listCategoriesController } from '../modules/cars/useCases/listCategories/ListCategoriesController'
+import { listCategoriesController } from '../modules/cars/useCases/listCategories'
 
 
 
