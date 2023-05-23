@@ -4,5 +4,34 @@
         "title" : "Rentalx Docs",
         "description": "Api for rent",
         "version": "1.0.0"
+    },
+    "paths" : {
+        "/categories" : {
+            "post" : {
+                "summary" : "Create a category",
+                "description" : "Create a new category",
+                "requestBody" : {
+                    "content" : {
+                        "application/json" : {
+                            "schema" : {
+                                "type" : "object",
+                                "properties" : {
+                                    "name" : {
+                                        "type" : "string"
+                                    },
+                                    "description" : {
+                                        "type" : "string"
+                                    }
+                                },
+                                "example" : {
+                                    "name" : "category name sample",
+                                    "description" : "Category description"
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
 }
