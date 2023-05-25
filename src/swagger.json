@@ -8,6 +8,7 @@
     "paths" : {
         "/categories" : {
             "post" : {
+                "tags": ["Category"],
                 "summary" : "Create a category",
                 "description" : "Create a new category",
                 "requestBody" : {
@@ -29,6 +30,14 @@
                                 }
                             }
                         }
+                    }
+                },
+                "responses" : {
+                    "201" : {
+                        "description" : "Created"
+                    },
+                    "500" : {
+                        "description" : "Category already exists"
                     }
                 }
             }
